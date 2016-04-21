@@ -23,6 +23,41 @@ namespace Projekt
             //BuildLocalizedApplicationBar();
         }
 
+        private void Bmapa_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Mapa.xaml", UriKind.Relative));
+        }
+
+        private void Bdziwonki_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Dzwonki.xaml", UriKind.Relative));
+        }
+
+        private void Bautobusy_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Autobusy.xaml", UriKind.Relative));
+        }
+
+        private void ustawieniaImg_Tap(object sender, System.Windows.Input.GestureEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Ustawienia.xaml", UriKind.Relative));
+        }
+
+        private void PhoneApplicationPage_OrientationChanged(object sender, OrientationChangedEventArgs e)
+        {
+            // Switch the placement of the buttons based on an orientation change.
+            if ((e.Orientation & PageOrientation.Portrait) == (PageOrientation.Portrait))
+            {
+               
+            }
+            // If not in portrait, move buttonList content to visible row and column.
+            else
+            {
+                NavigationService.Navigate(new Uri("/MainPageL.xaml", UriKind.Relative));
+            }
+            
+        }
+
 /*        private void button_Click(object sender, RoutedEventArgs e)                     //Zakomentowałem to bo narazie nie używamy tego 
         {
             var webClient = new WebClient();

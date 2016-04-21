@@ -36,3 +36,8 @@ D:\Programowanie\Projekty OAM\Projekt Windows Phone\Projekt\obj\Debug\Projekt.cs
 D:\Programowanie\Projekty OAM\Projekt Windows Phone\Projekt\obj\Debug\Projekt.dll
 D:\Programowanie\Projekty OAM\Projekt Windows Phone\Projekt\obj\Debug\Projekt.pdb
 D:\Programowanie\Projekty OAM\Projekt Windows Phone\Projekt\obj\Debug\XapCacheFile.xml
+D:\Programowanie\Projekty OAM\Projekt Windows Phone\Projekt\obj\Debug\Autobusy.g.cs
+D:\Programowanie\Projekty OAM\Projekt Windows Phone\Projekt\obj\Debug\Dzwonki.g.cs
+D:\Programowanie\Projekty OAM\Projekt Windows Phone\Projekt\obj\Debug\Mapa.g.cs
+D:\Programowanie\Projekty OAM\Projekt Windows Phone\Projekt\obj\Debug\Ustawienia.g.cs
+D:\Programowanie\Projekty OAM\Projekt Windows Phone\Projekt\obj\Debug\MainPageL.g.cs
