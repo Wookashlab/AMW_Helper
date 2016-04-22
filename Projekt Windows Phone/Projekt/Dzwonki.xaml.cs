@@ -91,8 +91,18 @@ namespace Projekt
             {
                 licznik.Text = "Dziś już więcej zajęć nie masz :) ";
             }
-            
-            licznik.Text += (dzwonek - test).ToString() + "min";
+            string pomoc1 = dzwonek.ToString();
+            string pomoc2 = test.ToString();
+            if (pomoc1[pomoc1.Length - 2] == pomoc2[pomoc2.Length - 2])
+            {
+                licznik.Text += (dzwonek - test).ToString() + "min";
+            }
+            else
+            {
+               int a= 60-(test % 100) + dzwonek % 100;
+               licznik.Text += a.ToString() + "min";
+            }
+
 
         }
         void reset()
