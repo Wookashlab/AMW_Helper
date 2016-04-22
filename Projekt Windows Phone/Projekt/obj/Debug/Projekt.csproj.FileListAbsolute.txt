@@ -41,27 +41,3 @@ D:\Programowanie\Projekty OAM\Projekt Windows Phone\Projekt\obj\Debug\Dzwonki.g.
 D:\Programowanie\Projekty OAM\Projekt Windows Phone\Projekt\obj\Debug\Mapa.g.cs
 D:\Programowanie\Projekty OAM\Projekt Windows Phone\Projekt\obj\Debug\Ustawienia.g.cs
 D:\Programowanie\Projekty OAM\Projekt Windows Phone\Projekt\obj\Debug\MainPageL.g.cs
-C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\Bin\Debug\Assets\ApplicationIcon.png
-C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\Bin\Debug\Assets\Tiles\FlipCycleTileLarge.png
-C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\Bin\Debug\Assets\Tiles\FlipCycleTileMedium.png
-C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\Bin\Debug\Assets\Tiles\FlipCycleTileSmall.png
-C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\Bin\Debug\Assets\Tiles\IconicTileMediumLarge.png
-C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\Bin\Debug\Assets\Tiles\IconicTileSmall.png
-C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\Bin\Debug\Projekt.dll
-C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\Bin\Debug\Projekt.pdb
-C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\Bin\Debug\AppManifest.xaml
-C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\Bin\Debug\Properties\WMAppManifest.xml
-C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\Bin\Debug\Projekt_Debug_AnyCPU.xap
-C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\obj\Debug\App.g.cs
-C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\obj\Debug\Autobusy.g.cs
-C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\obj\Debug\Dzwonki.g.cs
-C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\obj\Debug\MainPage.g.cs
-C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\obj\Debug\MainPageL.g.cs
-C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\obj\Debug\Mapa.g.cs
-C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\obj\Debug\Ustawienia.g.cs
-C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\obj\Debug\Projekt.g.resources
-C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\obj\Debug\Projekt.Resources.AppResources.resources
-C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\obj\Debug\Projekt.csproj.GenerateResource.Cache
-C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\obj\Debug\Projekt.dll
-C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\obj\Debug\Projekt.pdb
-C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\obj\Debug\XapCacheFile.xml
