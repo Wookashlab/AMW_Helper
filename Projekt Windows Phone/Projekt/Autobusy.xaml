@@ -27,6 +27,11 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <TextBlock HorizontalAlignment="Left" Margin="10,48,0,0" TextWrapping="Wrap" Text="Wybierz przystanek:" VerticalAlignment="Top"/>
+            <Button Content="Akademia Marynarki Wojennej" HorizontalAlignment="Left" Margin="202,0,0,0" VerticalAlignment="Top" Width="254" Height="60" FontSize="14"/>
+            <Button Content="Oksywie dolne" HorizontalAlignment="Left" Margin="202,60,0,0" VerticalAlignment="Top" Width="254" Height="60" FontSize="14"/>
+            <TextBlock HorizontalAlignment="Left" Margin="30,148,0,0" TextWrapping="Wrap" Text="+ W stronę Obłuża " VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Left" Margin="30,437,0,0" TextWrapping="Wrap" Text="+ W stronę Oksywia" VerticalAlignment="Top"/>
 
         </Grid>
     </Grid>
