@@ -156,7 +156,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AppLogo.png" />
     <Content Include="Assets\AlignmentGrid.png" />
     <Content Include="Assets\ApplicationIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
