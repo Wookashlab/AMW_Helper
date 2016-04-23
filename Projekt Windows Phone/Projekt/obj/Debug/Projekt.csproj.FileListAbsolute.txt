@@ -65,3 +65,10 @@ C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\
 C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\obj\Debug\Projekt.dll
 C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\obj\Debug\Projekt.pdb
 C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\obj\Debug\XapCacheFile.xml
+C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\Bin\Debug\System.Net.Http.dll
+C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\Bin\Debug\System.Net.Http.Extensions.dll
+C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\Bin\Debug\System.Net.Http.Primitives.dll
+C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\Bin\Debug\System.Net.Http.xml
+C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\Bin\Debug\System.Net.Http.Extensions.xml
+C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\Bin\Debug\System.Net.Http.Primitives.xml
+C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\obj\Debug\Projekt.csprojResolveAssemblyReference.cache

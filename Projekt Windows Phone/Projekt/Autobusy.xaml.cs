@@ -11,7 +11,8 @@ using System.Collections.ObjectModel;
 using Projekt.Resources;
 using System.IO;
 using System.Text.RegularExpressions;
-
+using System.Threading.Tasks;
+using System; 
 namespace Projekt
 {
     public partial class Autobusy : PhoneApplicationPage
@@ -40,8 +41,30 @@ namespace Projekt
                 }
             }
         }
+        int ile_dodano;
+        void rozklad(object sender, OpenReadCompletedEventArgs e)
+        {
+            using (var reader = new StreamReader(e.Result))
+            {
+                string value = reader.ReadToEnd();
+                string[] response = Regex.Split(value, "<br>");
+                ile_dodano = 0;
+                for(int i = 0; i < response.Length; i++)
+                {
+                    if (response[i] != "")
+                    {
+                        List.Items.Insert(selected + ile_dodano + 1, "-->" + response[i]);
+                        ile_dodano++;
+                    }
+                }
+                ile.Add(ile_dodano);
+            }
+        }
         List<int> l = new List<int>(); //lista przechowujaca informacje o tym czy dany element jest rozwiniety 
+        List<int> ile = new List<int>();
         bool check;
+        string autobus;
+        int selected;
         private void List_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (List.SelectedIndex != -1) //dzieki temu mozemy odznaczyc zaznaczony element umozliwia to zwijanie i rozwijanie tego samego elementu 
@@ -51,16 +74,21 @@ namespace Projekt
                 {
                     if (l[i] == List.SelectedIndex) //jestli jest rozwiniety zwiniecie go 
                     {
-                        List.Items.RemoveAt(l[i] + 1); //usuniecie z listy jednego elemenut 
-                        l.Remove(l[i]); // usuniecie z listy rozwinietych elementow 
+                        for(int k = 1; k <= ile[i]; k++)
+                        {
+                            List.Items.RemoveAt(l[i] + 1);
+                        }
+                       // List.Items.RemoveAt(l[i] + 1); //usuniecie z listy jednego elemenut 
+                       l.Remove(l[i]); // usuniecie z listy rozwinietych elementow 
                         check = true;
                         for (int j = 0; j < l.Count; j++)
                         {
                             if (l[j] > List.SelectedIndex)
                             {
-                                l[j] = l[j] - 1; // przesuniecie indeksów elementow 
+                                l[j] = l[j] - ile[i]; // przesuniecie indeksów elementow 
                             }
                         }
+                        ile.Remove(ile[i]);
                         //element opodzialn za ddanie + na poczatku 
                         int index1 = List.SelectedIndex;
                         string widok2 = List.SelectedItem.ToString();
@@ -79,6 +107,17 @@ namespace Projekt
                 }
                 if (check == false)
                 {
+                    //nowe
+                    autobus = List.SelectedItem.ToString();
+                    if(autobus[2] == 'X')
+                    {
+                        autobus = autobus[2].ToString();
+                    }
+                    else
+                    {
+                        autobus = autobus[2].ToString() + autobus[3].ToString() + autobus[4].ToString();
+                    }
+                    //koniec
                     //element odpowiedzialny za wstawienie -
                     int index = List.SelectedIndex;
                     string widok = List.SelectedItem.ToString();
@@ -89,13 +128,19 @@ namespace Projekt
                     }
                     widok = "-" + widok1;
                     //koniec elementu 
-                    List.Items.Insert(List.SelectedIndex + 1, "dzzdz");
+
+                    //nowe
+                    selected = List.SelectedIndex;
+                    var webClient = new WebClient();
+                    webClient.OpenReadAsync(new Uri("http://hein.bluequeen.tk/select2.php?a=" + autobus));
+                    webClient.OpenReadCompleted += new OpenReadCompletedEventHandler(rozklad);
+                    //koniec
                     l.Add(List.SelectedIndex);
                     for (int i = 0; i < l.Count; i++) //przesuniecie indeksow elementow 
                     {
                         if (l[i] > List.SelectedIndex)
                         {
-                            l[i] = l[i] + 1;
+                            l[i] = l[i] + ile_dodano;
                         }
                     }
                     //dokonczenie elementu odpowiedzialnego za wsawienie -
