@@ -6,13 +6,9 @@ using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
-using Microsoft.Phone.Shell;
-using System.Collections.ObjectModel;
-using Projekt.Resources;
 using System.IO;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-using System; 
+using System.Windows.Media;
 namespace Projekt
 {
     public partial class Autobusy : PhoneApplicationPage
@@ -20,6 +16,16 @@ namespace Projekt
         public Autobusy()
         {
             InitializeComponent();
+        }
+        public class MyListBoxItem
+        {
+            public MyListBoxItem(Color c, string m)
+            {
+                ItemColor = c;
+                Message = m;
+            }
+            public Color ItemColor { get; set; }
+            public string Message { get; set; }
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -53,7 +59,8 @@ namespace Projekt
                 {
                     if (response[i] != "")
                     {
-                        List.Items.Insert(selected + ile_dodano + 1, "-->" + response[i]);
+                        List.Items.Insert(selected + ile_dodano + 1, "   _|_" + response[i]);
+                        
                         ile_dodano++;
                     }
                 }
@@ -132,7 +139,7 @@ namespace Projekt
                     //nowe
                     selected = List.SelectedIndex;
                     var webClient = new WebClient();
-                    webClient.OpenReadAsync(new Uri("http://hein.bluequeen.tk/select2.php?a=" + autobus));
+                    webClient.OpenReadAsync(new Uri("http://hein.bluequeen.tk/select2.php?a='" + autobus + "'"));
                     webClient.OpenReadCompleted += new OpenReadCompletedEventHandler(rozklad);
                     //koniec
                     l.Add(List.SelectedIndex);
