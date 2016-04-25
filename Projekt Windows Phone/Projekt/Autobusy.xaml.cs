@@ -8,7 +8,6 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using System.IO;
 using System.Text.RegularExpressions;
-using System.Windows.Media;
 namespace Projekt
 {
     public partial class Autobusy : PhoneApplicationPage
@@ -16,16 +15,6 @@ namespace Projekt
         public Autobusy()
         {
             InitializeComponent();
-        }
-        public class MyListBoxItem
-        {
-            public MyListBoxItem(Color c, string m)
-            {
-                ItemColor = c;
-                Message = m;
-            }
-            public Color ItemColor { get; set; }
-            public string Message { get; set; }
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
@@ -57,9 +46,17 @@ namespace Projekt
                 ile_dodano = 0;
                 for(int i = 0; i < response.Length; i++)
                 {
-                    if (response[i] != "")
+                    if (response[i] != "" && response[i] != "Morska ")
                     {
-                        List.Items.Insert(selected + ile_dodano + 1, "   _|_" + response[i]);
+                        if (response[i] == "Hipermarket Tesco ")
+                        {
+                            List.Items.Insert(selected + ile_dodano + 1, "   _|_ " + response[i] + "- Morska");
+
+                        }
+                        else
+                        {
+                            List.Items.Insert(selected + ile_dodano + 1, "   _|_ " + response[i]);
+                        }
                         
                         ile_dodano++;
                     }
