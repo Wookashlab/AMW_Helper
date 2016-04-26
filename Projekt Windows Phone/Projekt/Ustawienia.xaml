@@ -6,6 +6,7 @@
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
@@ -27,8 +28,16 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <Button x:Name="Update" Content="Aktualizuj" HorizontalAlignment="Left" Margin="39,82,0,0" VerticalAlignment="Top" Width="368" Click="Update_Click"/>
-            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="39,210,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="368" Height="85"/>
+            <Button x:Name="Update" Content="Aktualizuj" HorizontalAlignment="Left" Margin="40,45,0,0" VerticalAlignment="Top" Width="368" Click="Update_Click"/>
+            <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="54,117,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="368" Height="85" RenderTransformOrigin="0.49,0.15"/>
+            <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Right" Height="5" Margin="-15,224,-20,0" Stroke="Black" VerticalAlignment="Top" Width="491"/>
+            <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="345" Height="35" Text="Aktualizuj baze danych"/>
+            <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="10,234,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="345" Height="35" Text="Wersja aplikacji:"/>
+            <TextBlock x:Name="textBlock_Copy2" Margin="101,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="345" Height="35" Text="v 1.2" HorizontalAlignment="Left" TextAlignment="Right"/>
+            <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Right" Height="5" Margin="-15,386,-20,0" Stroke="Black" VerticalAlignment="Top" Width="491"/>
+            <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Left" Margin="10,396,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="345" Height="35" Text="O twórcach:"/>
+            <Button x:Name="bOnas" Content="O nas" HorizontalAlignment="Left" Margin="54,466,0,0" VerticalAlignment="Top" Width="368" Click="bOnas_Click"/>
+            <TextBlock x:Name="textBlock_Copy4" Margin="101,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="345" Height="35" Text="(26-04-2016)" HorizontalAlignment="Left" TextAlignment="Right"/>
 
         </Grid>
     </Grid>
