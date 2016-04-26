@@ -72,3 +72,10 @@ C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\
 C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\Bin\Debug\System.Net.Http.Extensions.xml
 C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\Bin\Debug\System.Net.Http.Primitives.xml
 C:\Users\MaciejH\Desktop\Projekt_OAM\Projekty-OAM\Projekt Windows Phone\Projekt\obj\Debug\Projekt.csprojResolveAssemblyReference.cache
+D:\Programowanie\Projekty OAM\Projekt Windows Phone\Projekt\Bin\Debug\System.Net.Http.dll
+D:\Programowanie\Projekty OAM\Projekt Windows Phone\Projekt\Bin\Debug\System.Net.Http.Extensions.dll
+D:\Programowanie\Projekty OAM\Projekt Windows Phone\Projekt\Bin\Debug\System.Net.Http.Primitives.dll
+D:\Programowanie\Projekty OAM\Projekt Windows Phone\Projekt\Bin\Debug\System.Net.Http.xml
+D:\Programowanie\Projekty OAM\Projekt Windows Phone\Projekt\Bin\Debug\System.Net.Http.Extensions.xml
+D:\Programowanie\Projekty OAM\Projekt Windows Phone\Projekt\Bin\Debug\System.Net.Http.Primitives.xml
+D:\Programowanie\Projekty OAM\Projekt Windows Phone\Projekt\obj\Debug\Projekt.csprojResolveAssemblyReference.cache

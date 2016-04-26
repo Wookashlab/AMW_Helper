@@ -26,6 +26,7 @@ namespace Projekt
         {
             using (var reader = new StreamReader(e.Result))
             {
+                List.Items.Clear();
                 string value = reader.ReadToEnd();
                 string[] response = Regex.Split(value, "<br>");
                 int i = 0;
