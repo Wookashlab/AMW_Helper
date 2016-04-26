@@ -71,86 +71,103 @@ namespace Projekt
         int selected;
         private void List_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (List.SelectedIndex != -1) //dzieki temu mozemy odznaczyc zaznaczony element umozliwia to zwijanie i rozwijanie tego samego elementu 
+            string rozp;
+
+            try
             {
-                check = false;
-                for (int i = 0; i < l.Count; i++) //sprawdzenie czy wybrany element jest rozwiniety 
+                rozp = List.SelectedItem.ToString();
+            }
+            catch
+            {
+                rozp = "asdsadasda";
+            }
+            if (List.SelectedIndex != -1)  //dzieki temu mozemy odznaczyc zaznaczony element umozliwia to zwijanie i rozwijanie tego samego elementu 
+            {
+                if (rozp[0] == '+' || rozp[0] == '-')
                 {
-                    if (l[i] == List.SelectedIndex) //jestli jest rozwiniety zwiniecie go 
+                    check = false;
+                    for (int i = 0; i < l.Count; i++) //sprawdzenie czy wybrany element jest rozwiniety 
                     {
-                        for(int k = 1; k <= ile[i]; k++)
+                        if (l[i] == List.SelectedIndex) //jestli jest rozwiniety zwiniecie go 
                         {
-                            List.Items.RemoveAt(l[i] + 1);
-                        }
-                       // List.Items.RemoveAt(l[i] + 1); //usuniecie z listy jednego elemenut 
-                       l.Remove(l[i]); // usuniecie z listy rozwinietych elementow 
-                        check = true;
-                        for (int j = 0; j < l.Count; j++)
-                        {
-                            if (l[j] > List.SelectedIndex)
+                            for (int k = 1; k <= ile[i]; k++)
                             {
-                                l[j] = l[j] - ile[i]; // przesuniecie indeksów elementow 
+                                List.Items.RemoveAt(l[i] + 1);
+                            }
+                            // List.Items.RemoveAt(l[i] + 1); //usuniecie z listy jednego elemenut 
+                            l.Remove(l[i]); // usuniecie z listy rozwinietych elementow 
+                            check = true;
+                            for (int j = 0; j < l.Count; j++)
+                            {
+                                if (l[j] > List.SelectedIndex)
+                                {
+                                    l[j] = l[j] - ile[i]; // przesuniecie indeksów elementow 
+                                }
+                            }
+                            ile.Remove(ile[i]);
+                            //element opodzialn za ddanie + na poczatku 
+                            int index1 = List.SelectedIndex;
+                            string widok2 = List.SelectedItem.ToString();
+                            string widok3 = "";
+                            for (int k = 1; k < widok2.Length; k++)
+                            {
+                                widok3 += widok2[k];
+                            }
+                            widok2 = "+" + widok3;
+                            List.Items.Insert(index1 + 1, widok2);
+                            List.Items.RemoveAt(index1);
+                            // koniec elementu 
+
+                            List.SelectedIndex = -1;
+                        }
+                    }
+                    if (check == false)
+                    {
+                        //nowe
+                        autobus = List.SelectedItem.ToString();
+                        if (autobus[2] == 'X')
+                        {
+                            autobus = autobus[2].ToString();
+                        }
+                        else
+                        {
+                            autobus = autobus[2].ToString() + autobus[3].ToString() + autobus[4].ToString();
+                        }
+                        //koniec
+                        //element odpowiedzialny za wstawienie -
+                        int index = List.SelectedIndex;
+                        string widok = List.SelectedItem.ToString();
+                        string widok1 = "";
+                        for (int i = 1; i < widok.Length; i++)
+                        {
+                            widok1 += widok[i];
+                        }
+                        widok = "-" + widok1;
+                        //koniec elementu 
+
+                        //nowe
+                        selected = List.SelectedIndex;
+                        var webClient = new WebClient();
+                        webClient.OpenReadAsync(new Uri("http://hein.bluequeen.tk/select2.php?a='" + autobus + "'"));
+                        webClient.OpenReadCompleted += new OpenReadCompletedEventHandler(rozklad);
+                        //koniec
+                        l.Add(List.SelectedIndex);
+                        for (int i = 0; i < l.Count; i++) //przesuniecie indeksow elementow 
+                        {
+                            if (l[i] > List.SelectedIndex)
+                            {
+                                l[i] = l[i] + ile_dodano;
                             }
                         }
-                        ile.Remove(ile[i]);
-                        //element opodzialn za ddanie + na poczatku 
-                        int index1 = List.SelectedIndex;
-                        string widok2 = List.SelectedItem.ToString();
-                        string widok3 = "";
-                        for (int k = 1; k < widok2.Length; k++)
-                        {
-                            widok3 += widok2[k];
-                        }
-                        widok2 = "+" + widok3;
-                        List.Items.Insert(index1 + 1, widok2);
-                        List.Items.RemoveAt(index1);
-                        // koniec elementu 
-
+                        //dokonczenie elementu odpowiedzialnego za wsawienie -
+                        List.Items.Insert(index + 1, widok);
+                        List.Items.RemoveAt(index);
+                        //koniec elmentu 
                         List.SelectedIndex = -1;
                     }
                 }
-                if (check == false)
+                else
                 {
-                    //nowe
-                    autobus = List.SelectedItem.ToString();
-                    if(autobus[2] == 'X')
-                    {
-                        autobus = autobus[2].ToString();
-                    }
-                    else
-                    {
-                        autobus = autobus[2].ToString() + autobus[3].ToString() + autobus[4].ToString();
-                    }
-                    //koniec
-                    //element odpowiedzialny za wstawienie -
-                    int index = List.SelectedIndex;
-                    string widok = List.SelectedItem.ToString();
-                    string widok1 = "";
-                    for (int i = 1; i < widok.Length; i++)
-                    {
-                        widok1 += widok[i];
-                    }
-                    widok = "-" + widok1;
-                    //koniec elementu 
-
-                    //nowe
-                    selected = List.SelectedIndex;
-                    var webClient = new WebClient();
-                    webClient.OpenReadAsync(new Uri("http://hein.bluequeen.tk/select2.php?a='" + autobus + "'"));
-                    webClient.OpenReadCompleted += new OpenReadCompletedEventHandler(rozklad);
-                    //koniec
-                    l.Add(List.SelectedIndex);
-                    for (int i = 0; i < l.Count; i++) //przesuniecie indeksow elementow 
-                    {
-                        if (l[i] > List.SelectedIndex)
-                        {
-                            l[i] = l[i] + ile_dodano;
-                        }
-                    }
-                    //dokonczenie elementu odpowiedzialnego za wsawienie -
-                    List.Items.Insert(index + 1, widok);
-                    List.Items.RemoveAt(index);
-                    //koniec elmentu 
                     List.SelectedIndex = -1;
                 }
             }
