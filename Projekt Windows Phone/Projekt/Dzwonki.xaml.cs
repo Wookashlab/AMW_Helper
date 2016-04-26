@@ -93,7 +93,7 @@ namespace Projekt
             }
             string pomoc1 = dzwonek.ToString();
             string pomoc2 = test.ToString();
-            if (pomoc1[pomoc1.Length - 2] == pomoc2[pomoc2.Length - 2])
+            if (pomoc1[pomoc1.Length - 3] == pomoc2[pomoc2.Length - 3])
             {
                 licznik.Text += (dzwonek - test).ToString() + "min";
             }

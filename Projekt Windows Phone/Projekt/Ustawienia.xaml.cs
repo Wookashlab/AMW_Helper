@@ -44,7 +44,7 @@ namespace Projekt
 
         private void bOnas_Click(object sender, RoutedEventArgs e)
         {
-            System.Windows.MessageBox.Show("Program AMW Helper został stworzny Macieja Hein i Łukasza Labuda. \nStudentów 3 roku informatyki na Akademi Marynarki wojejnnej potrzeby zaliczenia przedmiotu - Aplikacje internetowe i mobile");
+            System.Windows.MessageBox.Show("Program AMW Helper został stworzny przez Macieja Hein i Łukasza Labuda. \nStudentów 3 roku informatyki na Akademi Marynarki Wojejnnej na potrzeby przedmiotu - Aplikacje internetowe i mobile");
         }
 
       
