@@ -158,17 +158,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AppLogo.png" />
-    <Content Include="Assets\add.png" />
     <Content Include="Assets\AlignmentGrid.png" />
     <Content Include="Assets\ApplicationIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\bus.png" />
     <Content Include="Assets\logo2.png" />
     <Content Include="Assets\LogoL.png" />
     <Content Include="Assets\mapa.jpg" />
     <Content Include="Assets\Settings-L-icon.png" />
-    <Content Include="Assets\sub.png" />
     <Content Include="Assets\Tiles\FlipCycleTileLarge.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

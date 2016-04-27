@@ -31,14 +31,7 @@
             <Button Content="Akademia Marynarki Wojennej" HorizontalAlignment="Left" Margin="202,0,0,0" VerticalAlignment="Top" Width="254" Height="60" FontSize="14" Click="Button_Click"/>
             <Button Content="Oksywie dolne" HorizontalAlignment="Left" Margin="202,60,0,0" VerticalAlignment="Top" Width="254" Height="60" FontSize="14"/>
             <ListBox x:Name="List" Margin="0,188,0,32" SelectionChanged="List_SelectionChanged" FontSize="26.667">
-                <ListBox.ItemTemplate>
-                    <DataTemplate>
-                        <StackPanel Orientation="Horizontal">
-                            <Image Source="{Binding ImagePath}"></Image>
-                            <TextBlock Text="{Binding Name}"></TextBlock>
-                        </StackPanel>
-                    </DataTemplate>
-                </ListBox.ItemTemplate>
+                
             </ListBox>
             <RadioButton x:Name="rbOksywie" Content="-&gt; Oksywie " HorizontalAlignment="Left" Margin="258,111,0,0" VerticalAlignment="Top"/>
             <RadioButton x:Name="rbObluze" Content="-&gt; Obłuże" HorizontalAlignment="Left" Margin="10,111,0,0" VerticalAlignment="Top" IsChecked="True"/>
