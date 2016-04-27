@@ -16,6 +16,12 @@ namespace Projekt
         {
             InitializeComponent();
         }
+        public class Przystanek
+        {
+            public string Name { get; set; }
+
+            public string ImagePath { get; set; }
+        }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             var webClient = new WebClient();
@@ -32,7 +38,8 @@ namespace Projekt
                 int i = 0;
                 while (i < response.Length - 1)
                 {
-                    List.Items.Add("+ " + response[i]);
+                    Przystanek p = new Przystanek() { Name = response[i], ImagePath = "/Assets/add.png" };
+                    List.Items.Add(p);
                     i++;
                 }
             }
@@ -51,12 +58,13 @@ namespace Projekt
                     {
                         if (response[i] == "Hipermarket Tesco ")
                         {
-                            List.Items.Insert(selected + ile_dodano + 1, "   _|_ " + response[i] + "- Morska");
-
+                            Przystanek p = new Przystanek() { Name = response[i] + "- Morska", ImagePath = "/Assets/bus.png" };
+                            List.Items.Insert(selected + ile_dodano + 1, p);
                         }
                         else
                         {
-                            List.Items.Insert(selected + ile_dodano + 1, "   _|_ " + response[i]);
+                            Przystanek p = new Przystanek() { Name =  response[i], ImagePath = "/Assets/bus.png" };
+                            List.Items.Insert(selected + ile_dodano + 1, p);
                         }
                         
                         ile_dodano++;
@@ -68,23 +76,21 @@ namespace Projekt
         List<int> l = new List<int>(); //lista przechowujaca informacje o tym czy dany element jest rozwiniety 
         List<int> ile = new List<int>();
         bool check;
-        string autobus;
         int selected;
         private void List_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            string rozp;
-
+            Przystanek rozp = new Przystanek();
             try
             {
-                rozp = List.SelectedItem.ToString();
+                rozp = (Przystanek)List.SelectedItem;
             }
             catch
             {
-                rozp = "asdsadasda";
+                rozp.ImagePath = "asdsadasda";
             }
             if (List.SelectedIndex != -1)  //dzieki temu mozemy odznaczyc zaznaczony element umozliwia to zwijanie i rozwijanie tego samego elementu 
             {
-                if (rozp[0] == '+' || rozp[0] == '-')
+                if (rozp.ImagePath == "/Assets/add.png" || rozp.ImagePath == "/Assets/sub.png")
                 {
                     check = false;
                     for (int i = 0; i < l.Count; i++) //sprawdzenie czy wybrany element jest rozwiniety 
@@ -108,13 +114,17 @@ namespace Projekt
                             ile.Remove(ile[i]);
                             //element opodzialn za ddanie + na poczatku 
                             int index1 = List.SelectedIndex;
-                            string widok2 = List.SelectedItem.ToString();
-                            string widok3 = "";
-                            for (int k = 1; k < widok2.Length; k++)
+                            Przystanek widok2 = new Przystanek();
+                            Przystanek widok3 = new Przystanek();
+                            widok2 = (Przystanek)List.SelectedItem;
+                            widok2 = (Przystanek)List.SelectedItem;
+                            widok3.Name = "";
+                            for (int k = 0; k < widok2.Name.Length; k++)
                             {
-                                widok3 += widok2[k];
+                                widok3.Name += widok2.Name[k];
                             }
-                            widok2 = "+" + widok3;
+                            widok2.ImagePath = "/Assets/add.png";
+                            widok2.Name = widok3.Name;
                             List.Items.Insert(index1 + 1, widok2);
                             List.Items.RemoveAt(index1);
                             // koniec elementu 
@@ -125,31 +135,35 @@ namespace Projekt
                     if (check == false)
                     {
                         //nowe
-                        autobus = List.SelectedItem.ToString();
-                        if (autobus[2] == 'X')
+                        Przystanek  autobus = new Przystanek();
+                        autobus = (Przystanek)List.SelectedItem;
+                        string autobus1 = autobus.Name;
+                        if (autobus.Name[0] == 'X')
                         {
-                            autobus = autobus[2].ToString();
+                            autobus1 = autobus.Name[0].ToString();
                         }
                         else
                         {
-                            autobus = autobus[2].ToString() + autobus[3].ToString() + autobus[4].ToString();
+                            autobus1 = autobus.Name[0].ToString() + autobus.Name[1].ToString() + autobus.Name[2].ToString();
                         }
                         //koniec
                         //element odpowiedzialny za wstawienie -
                         int index = List.SelectedIndex;
-                        string widok = List.SelectedItem.ToString();
-                        string widok1 = "";
-                        for (int i = 1; i < widok.Length; i++)
+                        Przystanek widok = (Przystanek)List.SelectedItem;
+                        Przystanek widok1 = new Przystanek();
+                        widok1.Name = "";
+                        for (int i = 0; i < widok.Name.Length; i++)
                         {
-                            widok1 += widok[i];
+                            widok1.Name += widok.Name[i];
                         }
-                        widok = "-" + widok1;
+                        widok.ImagePath = "/Assets/sub.png";
+                        widok.Name = widok1.Name;
                         //koniec elementu 
 
                         //nowe
                         selected = List.SelectedIndex;
                         var webClient = new WebClient();
-                        webClient.OpenReadAsync(new Uri("http://hein.bluequeen.tk/select2.php?a='" + autobus + "'"));
+                        webClient.OpenReadAsync(new Uri("http://hein.bluequeen.tk/select2.php?a='" + autobus1 + "'"));
                         webClient.OpenReadCompleted += new OpenReadCompletedEventHandler(rozklad);
                         //koniec
                         l.Add(List.SelectedIndex);
