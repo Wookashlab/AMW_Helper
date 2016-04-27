@@ -1,0 +1,9 @@
+SELECT A.Nazwa, R.Godzina 
+From Autobus AS A, Rozklad AS R, Przystanek AS P
+WHERE A.ID = R.IDAutobus 
+	AND R.Godzina > $time
+	AND R.Godzina < $time+100 (czas + 100 jeœli godzina)
+	AND R.Dzien = "PonPn" (odpowiedni znacznik dnia W, PonPn itd ? ? ? ?? nie mam narazie pomys³y jak to wyciagnaæ)
+	AND P.ID = A.IDPrzystanek	
+	AND P.ID = 1
+ORDER BY R.Godzina ;
