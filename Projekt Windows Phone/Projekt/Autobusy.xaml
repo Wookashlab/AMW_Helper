@@ -27,10 +27,10 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <TextBlock HorizontalAlignment="Left" Margin="10,48,0,0" TextWrapping="Wrap" Text="Wybierz przystanek:" VerticalAlignment="Top"/>
-            <Button Content="Akademia Marynarki Wojennej" HorizontalAlignment="Left" Margin="202,0,0,0" VerticalAlignment="Top" Width="254" Height="60" FontSize="14" Click="Button_Click"/>
-            <Button Content="Oksywie dolne" HorizontalAlignment="Left" Margin="202,60,0,0" VerticalAlignment="Top" Width="254" Height="60" FontSize="14"/>
-            <ListBox x:Name="List" Margin="10,188,-10,32" SelectionChanged="List_SelectionChanged" FontSize="26.667">
+            <TextBlock HorizontalAlignment="Left" Margin="10,0,0,0" TextWrapping="Wrap" Text="Wybierz przystanek:" VerticalAlignment="Top"/>
+            <Button x:Name="AMWObluze" Content="AMW -&gt; Obłuże" HorizontalAlignment="Left" Margin="18,32,0,0" VerticalAlignment="Top" Width="224" Height="65" FontSize="14" Click="AMWObl"/>
+            <Button x:Name="Oksywie" Content="Oksywie Dolne -&gt; Obłuże" HorizontalAlignment="Left" Margin="18,76,0,0" VerticalAlignment="Top" Width="224" Height="65" FontSize="14" Click="OksywieObluze"/>
+            <ListBox x:Name="List" Margin="10,152,-10,10" SelectionChanged="List_SelectionChanged" FontSize="26.667">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal" >
@@ -40,8 +40,8 @@
                     </DataTemplate>
                 </ListBox.ItemTemplate>
             </ListBox>
-            <RadioButton x:Name="rbOksywie" Content="-&gt; Oksywie " HorizontalAlignment="Left" Margin="258,111,0,0" VerticalAlignment="Top"/>
-            <RadioButton x:Name="rbObluze" Content="-&gt; Obłuże" HorizontalAlignment="Left" Margin="10,111,0,0" VerticalAlignment="Top" IsChecked="True"/>
+            <Button x:Name="AMWOksywie" Content="AMW -&gt; Oksywie" HorizontalAlignment="Left" Margin="222,32,0,0" VerticalAlignment="Top" Width="224" Height="65" FontSize="14" Click="AMWOksywie_Click"/>
+            <Button x:Name="Oksywie_Copy" Content="Oksywie Dolne -&gt; Oksywie" HorizontalAlignment="Left" Margin="222,76,0,0" VerticalAlignment="Top" Width="224" Height="65" FontSize="14" Click="OksywieOksywie"/>
         </Grid>
     </Grid>
 

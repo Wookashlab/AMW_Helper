@@ -23,11 +23,35 @@ namespace Projekt
             public string forgroundColor { get;  set;}
             public string fontsize { get; set; }
         }
-        private void Button_Click(object sender, RoutedEventArgs e)
+        public string jakiprzystanek = "";
+        private void AMWObl(object sender, RoutedEventArgs e)
         {
             var webClient = new WebClient();
             webClient.OpenReadAsync(new Uri("http://hein.bluequeen.tk/select.php"));
             webClient.OpenReadCompleted += new OpenReadCompletedEventHandler(bus);
+            jakiprzystanek = "AMWOBLUZE";
+        }
+        private void AMWOksywie_Click(object sender, RoutedEventArgs e)
+        {
+            var webClient = new WebClient();
+            webClient.OpenReadAsync(new Uri("http://hein.bluequeen.tk/select3.php"));
+            webClient.OpenReadCompleted += new OpenReadCompletedEventHandler(bus);
+            jakiprzystanek = "AMWOKSYWIE";
+        }
+        private void OksywieObluze(object sender, RoutedEventArgs e)
+        {
+            var webClient = new WebClient();
+            webClient.OpenReadAsync(new Uri("http://hein.bluequeen.tk/select5.php"));
+            webClient.OpenReadCompleted += new OpenReadCompletedEventHandler(bus);
+            jakiprzystanek = "OKSOBLUZE";
+        }
+
+        private void OksywieOksywie(object sender, RoutedEventArgs e)
+        {
+            var webClient = new WebClient();
+            webClient.OpenReadAsync(new Uri("http://hein.bluequeen.tk/select7.php"));
+            webClient.OpenReadCompleted += new OpenReadCompletedEventHandler(bus);
+            jakiprzystanek = "OKSOKSYWIE";
         }
         void bus(object sender, OpenReadCompletedEventArgs e)
         {
@@ -59,7 +83,7 @@ namespace Projekt
                     {
                         if (response[i] == "Hipermarket Tesco ")
                         {
-                            Przystanek p = new Przystanek() { Name = " " +  response[i] + "- Morska", ImagePath = "/Assets/BusS.png", forgroundColor = "Blue", fontsize = "20"};
+                            Przystanek p = new Przystanek() { Name = " " +  response[i] + "- Morska", ImagePath = "/Assets/BusS.png", forgroundColor = "Green", fontsize = "20"};
                             List.Items.Insert(selected + ile_dodano + 1, p);
                         }
                         else
@@ -163,9 +187,30 @@ namespace Projekt
 
                         //nowe
                         selected = List.SelectedIndex;
-                        var webClient = new WebClient();
-                        webClient.OpenReadAsync(new Uri("http://hein.bluequeen.tk/select2.php?a='" + autobus1 + "'"));
-                        webClient.OpenReadCompleted += new OpenReadCompletedEventHandler(rozklad);
+                        if (jakiprzystanek == "AMWOBLUZE")
+                        {
+                            var webClient = new WebClient();
+                            webClient.OpenReadAsync(new Uri("http://hein.bluequeen.tk/select2.php?a='" + autobus1 + "'"));
+                            webClient.OpenReadCompleted += new OpenReadCompletedEventHandler(rozklad);
+                        }
+                        if(jakiprzystanek == "AMWOKSYWIE")
+                        {
+                            var webClient = new WebClient();
+                            webClient.OpenReadAsync(new Uri("http://hein.bluequeen.tk/select4.php?a='" + autobus1 + "'"));
+                            webClient.OpenReadCompleted += new OpenReadCompletedEventHandler(rozklad);
+                        }
+                        if (jakiprzystanek == "OKSOBLUZE")
+                        {
+                            var webClient = new WebClient();
+                            webClient.OpenReadAsync(new Uri("http://hein.bluequeen.tk/select6.php?a='" + autobus1 + "'"));
+                            webClient.OpenReadCompleted += new OpenReadCompletedEventHandler(rozklad);
+                        }
+                        if (jakiprzystanek == "OKSOKSYWIE")
+                        {
+                            var webClient = new WebClient();
+                            webClient.OpenReadAsync(new Uri("http://hein.bluequeen.tk/select8.php?a='" + autobus1 + "'"));
+                            webClient.OpenReadCompleted += new OpenReadCompletedEventHandler(rozklad);
+                        }
                         //koniec
                         l.Add(List.SelectedIndex);
                         for (int i = 0; i < l.Count; i++) //przesuniecie indeksow elementow 
@@ -187,11 +232,6 @@ namespace Projekt
                     List.SelectedIndex = -1;
                 }
             }
-        }
-
-        private void Image_TextInputStart(object sender, System.Windows.Input.TextCompositionEventArgs e)
-        {
-
         }
     }
 }
