@@ -163,7 +163,7 @@
     <Content Include="Assets\ApplicationIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Assets\bus.png" />
+    <Content Include="Assets\BusS.png" />
     <Content Include="Assets\logo2.png" />
     <Content Include="Assets\LogoL.png" />
     <Content Include="Assets\mapa.jpg" />

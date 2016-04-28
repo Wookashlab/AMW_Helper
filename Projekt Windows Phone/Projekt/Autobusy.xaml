@@ -33,9 +33,9 @@
             <ListBox x:Name="List" Margin="10,188,-10,32" SelectionChanged="List_SelectionChanged" FontSize="26.667">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
-                        <StackPanel Orientation="Horizontal">
+                        <StackPanel Orientation="Horizontal" >
                             <Image Source="{Binding ImagePath}"></Image>
-                            <TextBlock Text="{Binding Name}"  Foreground="{Binding forgroundColor}" FontSize="{Binding fontsize}" ></TextBlock>
+                            <TextBlock Text="{Binding Name}"  Foreground="{Binding forgroundColor}" FontSize="{Binding fontsize}"></TextBlock>
                         </StackPanel>
                     </DataTemplate>
                 </ListBox.ItemTemplate>

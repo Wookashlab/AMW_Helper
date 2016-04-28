@@ -19,7 +19,6 @@ namespace Projekt
         public class Przystanek
         {
             public string Name { get; set; }
-
             public string ImagePath { get; set; }
             public string forgroundColor { get;  set;}
             public string fontsize { get; set; }
@@ -40,7 +39,7 @@ namespace Projekt
                 int i = 0;
                 while (i < response.Length - 1)
                 {
-                    Przystanek p = new Przystanek() { Name = response[i], ImagePath = "/Assets/add.png", forgroundColor = "White", fontsize = "35" };
+                    Przystanek p = new Przystanek() { Name = " " +  response[i], ImagePath = "/Assets/add.png", forgroundColor = "White", fontsize = "35" };
                     List.Items.Add(p);
                     i++;
                 }
@@ -60,12 +59,12 @@ namespace Projekt
                     {
                         if (response[i] == "Hipermarket Tesco ")
                         {
-                            Przystanek p = new Przystanek() { Name = response[i] + "- Morska", ImagePath = "/Assets/bus.png", forgroundColor = "Blue", fontsize = "17"};
+                            Przystanek p = new Przystanek() { Name = " " +  response[i] + "- Morska", ImagePath = "/Assets/BusS.png", forgroundColor = "Blue", fontsize = "20"};
                             List.Items.Insert(selected + ile_dodano + 1, p);
                         }
                         else
                         {
-                            Przystanek p = new Przystanek() { Name =  response[i], ImagePath = "/Assets/bus.png", forgroundColor = "Blue" , fontsize = "20" };
+                            Przystanek p = new Przystanek() { Name = " " + response[i], ImagePath = "/Assets/BusS.png", forgroundColor = "Green" , fontsize = "20" };
                             List.Items.Insert(selected + ile_dodano + 1, p);
                         }
                         
@@ -140,13 +139,13 @@ namespace Projekt
                         Przystanek  autobus = new Przystanek();
                         autobus = (Przystanek)List.SelectedItem;
                         string autobus1 = autobus.Name;
-                        if (autobus.Name[0] == 'X')
+                        if (autobus.Name[1] == 'X')
                         {
                             autobus1 = autobus.Name[0].ToString();
                         }
                         else
                         {
-                            autobus1 = autobus.Name[0].ToString() + autobus.Name[1].ToString() + autobus.Name[2].ToString();
+                            autobus1 = autobus.Name[1].ToString() + autobus.Name[2].ToString() + autobus.Name[3].ToString();
                         }
                         //koniec
                         //element odpowiedzialny za wstawienie -
@@ -188,6 +187,11 @@ namespace Projekt
                     List.SelectedIndex = -1;
                 }
             }
+        }
+
+        private void Image_TextInputStart(object sender, System.Windows.Input.TextCompositionEventArgs e)
+        {
+
         }
     }
 }
