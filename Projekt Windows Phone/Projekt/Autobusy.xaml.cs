@@ -165,7 +165,7 @@ namespace Projekt
                         string autobus1 = autobus.Name;
                         if (autobus.Name[1] == 'X')
                         {
-                            autobus1 = autobus.Name[0].ToString();
+                            autobus1 = autobus.Name[1].ToString();
                         }
                         else
                         {
