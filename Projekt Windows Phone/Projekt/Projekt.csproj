@@ -166,6 +166,7 @@
     <Content Include="Assets\BusS.png" />
     <Content Include="Assets\logo2.png" />
     <Content Include="Assets\LogoL.png" />
+    <Content Include="Assets\Mapa\akademiki.png" />
     <Content Include="Assets\Mapa\biblioteka.png" />
     <Content Include="Assets\Mapa\bus.png" />
     <Content Include="Assets\Mapa\hala.png" />

@@ -31,18 +31,34 @@
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <Image x:Name="mapaImg" HorizontalAlignment="Left" Height="422" Margin="-10,-14,0,0" VerticalAlignment="Top" Width="714" Source="/Assets/Mapa/mapka.png"/>
-            <Image HorizontalAlignment="Left" Height="38" Margin="187,360,0,0" VerticalAlignment="Top" Width="43" Source="/Assets/Mapa/bus.png"/>
-            <Image HorizontalAlignment="Left" Height="38" Margin="23,340,0,0" VerticalAlignment="Top" Width="43" Source="/Assets/Mapa/bus.png"/>
-            <Image HorizontalAlignment="Left" Height="38" Margin="502,340,0,0" VerticalAlignment="Top" Width="43" Source="/Assets/Mapa/bus.png"/>
-            <Image HorizontalAlignment="Left" Height="38" Margin="459,302,0,0" VerticalAlignment="Top" Width="43" Source="/Assets/Mapa/bus.png" RenderTransformOrigin="-0.369,-0.119"/>
-            <Image HorizontalAlignment="Left" Height="38" Margin="280,314,0,0" VerticalAlignment="Top" Width="43" Source="/Assets/Mapa/restauracja.png" RenderTransformOrigin="-3.701,-0.787"/>
-            <Image HorizontalAlignment="Left" Height="38" Margin="147,322,0,0" VerticalAlignment="Top" Width="43" Source="/Assets/Mapa/restauracja.png" RenderTransformOrigin="-3.701,-0.787"/>
-            <Image HorizontalAlignment="Left" Height="38" Margin="99,322,0,0" VerticalAlignment="Top" Width="43" Source="/Assets/Mapa/sklep.png" RenderTransformOrigin="-3.701,-0.787"/>
-            <Image HorizontalAlignment="Left" Height="38" Margin="328,287,0,0" VerticalAlignment="Top" Width="43" Source="/Assets/Mapa/restauracja.png" RenderTransformOrigin="-3.701,-0.787"/>
-            <Image HorizontalAlignment="Left" Height="38" Margin="376,302,0,0" VerticalAlignment="Top" Width="43" Source="/Assets/Mapa/wejscie.png" RenderTransformOrigin="-0.369,-0.119"/>
-            <Image HorizontalAlignment="Left" Height="38" Margin="263,223,0,0" VerticalAlignment="Top" Width="43" Source="/Assets/Mapa/wejscie.png" RenderTransformOrigin="-0.369,-0.119"/>
-            <Image HorizontalAlignment="Left" Height="48" Margin="210,129,0,0" VerticalAlignment="Top" Width="71" Source="/Assets/Mapa/hala.png" RenderTransformOrigin="-0.369,-0.119"/>
-            <Image HorizontalAlignment="Left" Height="38" Margin="147,223,0,0" VerticalAlignment="Top" Width="43" Source="/Assets/Mapa/biblioteka.png" RenderTransformOrigin="-0.369,-0.119"/>
+            <Image HorizontalAlignment="Left" Height="38" Margin="187,360,0,0" VerticalAlignment="Top" Width="43" Source="/Assets/Mapa/bus.png" Tap="Image_Tap_1"/>
+            <Image HorizontalAlignment="Left" Height="38" Margin="23,340,0,0" VerticalAlignment="Top" Width="43" Source="/Assets/Mapa/bus.png" Tap="Image_Tap"/>
+            <Image HorizontalAlignment="Left" Height="38" Margin="502,340,0,0" VerticalAlignment="Top" Width="43" Source="/Assets/Mapa/bus.png" Tap="Image_Tap_5"/>
+            <Image HorizontalAlignment="Left" Height="38" Margin="459,302,0,0" VerticalAlignment="Top" Width="43" Source="/Assets/Mapa/bus.png" RenderTransformOrigin="-0.369,-0.119" Tap="Image_Tap_4"/>
+            <Image HorizontalAlignment="Left" Height="38" Margin="280,314,0,0" VerticalAlignment="Top" Width="43" Source="/Assets/Mapa/restauracja.png" RenderTransformOrigin="-3.701,-0.787" Tap="Image_Tap_10"/>
+            <Image HorizontalAlignment="Left" Height="38" Margin="147,322,0,0" VerticalAlignment="Top" Width="43" Source="/Assets/Mapa/restauracja.png" RenderTransformOrigin="-3.701,-0.787" Tap="Image_Tap_9"/>
+            <Image HorizontalAlignment="Left" Height="38" Margin="99,322,0,0" VerticalAlignment="Top" Width="43" Source="/Assets/Mapa/sklep.png" RenderTransformOrigin="-3.701,-0.787" Tap="Image_Tap_8"/>
+            <Image HorizontalAlignment="Left" Height="38" Margin="328,287,0,0" VerticalAlignment="Top" Width="43" Source="/Assets/Mapa/restauracja.png" RenderTransformOrigin="-3.701,-0.787" Tap="Image_Tap_11"/>
+            <Image HorizontalAlignment="Left" Height="38" Margin="376,302,0,0" VerticalAlignment="Top" Width="43" Source="/Assets/Mapa/wejscie.png" RenderTransformOrigin="-0.369,-0.119" Tap="Image_Tap_2"/>
+            <Image HorizontalAlignment="Left" Height="38" Margin="263,223,0,0" VerticalAlignment="Top" Width="43" Source="/Assets/Mapa/wejscie.png" RenderTransformOrigin="-0.369,-0.119" Tap="Image_Tap_3"/>
+            <Image HorizontalAlignment="Left" Height="48" Margin="210,129,0,0" VerticalAlignment="Top" Width="71" Source="/Assets/Mapa/hala.png" RenderTransformOrigin="-0.369,-0.119" Tap="Image_Tap_7"/>
+            <Image HorizontalAlignment="Left" Height="38" Margin="147,223,0,0" VerticalAlignment="Top" Width="43" Source="/Assets/Mapa/biblioteka.png" RenderTransformOrigin="-0.369,-0.119" Tap="Image_Tap_6"/>
+            <Image HorizontalAlignment="Left" Height="38" Margin="425,64,0,0" VerticalAlignment="Top" Width="43" Source="/Assets/Mapa/akademiki.png" RenderTransformOrigin="-0.369,-0.119" Tap="Image_Tap_12"/>
+            <TextBlock HorizontalAlignment="Left" Margin="425,129,0,0" TextWrapping="Wrap" Text="353" VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Left" Margin="419,298,0,0" TextWrapping="Wrap" Text="5" VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Left" Margin="328,244,0,0" TextWrapping="Wrap" Text="10" VerticalAlignment="Top" RenderTransformOrigin="0.105,-1.593"/>
+            <TextBlock HorizontalAlignment="Left" Margin="293,186,0,0" TextWrapping="Wrap" Text="7" VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Left" Margin="360,140,0,0" TextWrapping="Wrap" Text="9" VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Left" Margin="425,196,0,0" TextWrapping="Wrap" Text="11" VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Left" Margin="502,264,0,0" TextWrapping="Wrap" Text="3" VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Left" Margin="558,33,0,0" TextWrapping="Wrap" Text="365" VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Left" Margin="387,75,0,0" TextWrapping="Wrap" Text="354" VerticalAlignment="Top" RenderTransformOrigin="0.606,-0.259"/>
+            <TextBlock HorizontalAlignment="Left" Margin="468,64,0,0" TextWrapping="Wrap" Text="355" VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Left" Margin="481,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="27">
+            	<Run Text="13"/>
+            	<LineBreak/>
+            	<Run/>
+            </TextBlock>
 
         </Grid>
     </Grid>
