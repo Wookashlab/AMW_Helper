@@ -58,6 +58,11 @@ namespace Projekt
             
         }
 
+        private void PhoneApplicationPage_BackKeyPress(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Application.Current.Terminate();
+        }
+
 /*        private void button_Click(object sender, RoutedEventArgs e)                     //Zakomentowałem to bo narazie nie używamy tego 
         {
             var webClient = new WebClient();

@@ -89,7 +89,8 @@ namespace Projekt
             }
             else 
             {
-                licznik.Text = "Dziś już więcej zajęć nie masz :) ";
+                licznik.Text = "Nie ma już więcej zajęć :) ";
+                return;
             }
             string pomoc1 = dzwonek.ToString();
             string pomoc2 = test.ToString();

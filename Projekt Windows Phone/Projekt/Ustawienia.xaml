@@ -37,7 +37,13 @@
             <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Right" Height="5" Margin="-15,386,-20,0" Stroke="Black" VerticalAlignment="Top" Width="491"/>
             <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Left" Margin="10,396,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="345" Height="35" Text="O twórcach:"/>
             <Button x:Name="bOnas" Content="O nas" HorizontalAlignment="Left" Margin="54,466,0,0" VerticalAlignment="Top" Width="368" Click="bOnas_Click"/>
-            <TextBlock x:Name="textBlock_Copy4" Margin="101,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="345" Height="35" Text="(26-04-2016)" HorizontalAlignment="Left" TextAlignment="Right"/>
+            <TextBlock x:Name="textBlock_Copy4" Margin="101,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="345" Height="35" HorizontalAlignment="Left" TextAlignment="Right">
+            	<Run Text="("/>
+            	<Run Text="08"/>
+            	<Run Text="-0"/>
+            	<Run Text="5"/>
+            	<Run Text="-2016)"/>
+            </TextBlock>
 
         </Grid>
     </Grid>

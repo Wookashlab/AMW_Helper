@@ -51,5 +51,10 @@ namespace Projekt
             }
             
         }
+
+        private void PhoneApplicationPage_BackKeyPress(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            Application.Current.Terminate();
+        }
     }
 }
