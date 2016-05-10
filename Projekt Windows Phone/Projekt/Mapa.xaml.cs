@@ -59,7 +59,7 @@ namespace Projekt
 
         private void Image_Tap_8(object sender, System.Windows.Input.GestureEventArgs e)
         {
-            MessageBox.Show("Sklep ODIDO \nGodziny otwarcia:\nPon-Pt:\nSob:\nND:");
+            MessageBox.Show("Sklep ODIDO \nGodziny otwarcia:\nPn-Pt: 06:00-21:00\nSb: 06:30- 18:00\nND: 09:00-16:00");
         }
 
         private void Image_Tap_9(object sender, System.Windows.Input.GestureEventArgs e)
@@ -80,6 +80,11 @@ namespace Projekt
         private void Image_Tap_12(object sender, System.Windows.Input.GestureEventArgs e)
         {
             MessageBox.Show("Akademiki AMW");
+        }
+
+        private void PhoneApplicationPage_BackKeyPress(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/MainPageL.xaml", UriKind.Relative));
         }
     }
 }

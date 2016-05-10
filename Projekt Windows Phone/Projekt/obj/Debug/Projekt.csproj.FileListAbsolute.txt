@@ -110,3 +110,6 @@ C:\Users\MaciejH\Desktop\ProjektOAM\Projekty-OAM\Projekt Windows Phone\Projekt\o
 C:\Users\MaciejH\Desktop\ProjektOAM\Projekty-OAM\Projekt Windows Phone\Projekt\obj\Debug\Projekt.dll
 C:\Users\MaciejH\Desktop\ProjektOAM\Projekty-OAM\Projekt Windows Phone\Projekt\obj\Debug\Projekt.pdb
 C:\Users\MaciejH\Desktop\ProjektOAM\Projekty-OAM\Projekt Windows Phone\Projekt\obj\Debug\XapCacheFile.xml
+D:\Programowanie\Projekty OAM\Projekt Windows Phone\Projekt\obj\Debug\UstawieniaL.g.cs
+D:\Programowanie\Projekty OAM\Projekt Windows Phone\Projekt\obj\Debug\DzwonkiL.g.cs
+D:\Programowanie\Projekty OAM\Projekt Windows Phone\Projekt\obj\Debug\AutobusyL.g.cs

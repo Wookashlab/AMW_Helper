@@ -14,12 +14,13 @@ using System.Text.RegularExpressions;
 
 namespace Projekt
 {
-    public partial class Ustawienia : PhoneApplicationPage
+    public partial class UstawieniaL : PhoneApplicationPage
     {
-        public Ustawienia()
+        public UstawieniaL()
         {
             InitializeComponent();
         }
+
         private void Update_Click(object sender, RoutedEventArgs e)
         {
             SystemTray.ProgressIndicator = new ProgressIndicator();
@@ -40,7 +41,7 @@ namespace Projekt
             }
         }
 
-       
+
 
         private void bOnas_Click(object sender, RoutedEventArgs e)
         {
@@ -48,15 +49,14 @@ namespace Projekt
         }
 
        
-
         private void PhoneApplicationPage_OrientationChanged(object sender, OrientationChangedEventArgs e)
         {
-            
+            // Switch the placement of the buttons based on an orientation change.
             if ((e.Orientation & PageOrientation.Portrait) == (PageOrientation.Portrait))
             {
                 NavigationService.Navigate(new Uri("/Ustawienia.xaml", UriKind.Relative));
             }
-           
+            // If not in portrait, move buttonList content to visible row and column.
             else
             {
                 NavigationService.Navigate(new Uri("/UstawieniaL.xaml", UriKind.Relative));
@@ -65,7 +65,7 @@ namespace Projekt
 
         private void PhoneApplicationPage_BackKeyPress(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/MainPageL.xaml", UriKind.Relative));
         }
 
     }

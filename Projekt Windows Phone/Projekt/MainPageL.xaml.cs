@@ -19,12 +19,12 @@ namespace Projekt
 
         private void Bautobusy_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/Autobusy.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/AutobusyL.xaml", UriKind.Relative));
         }
 
         private void Bdzwonki_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/Dzwonki.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/DzwonkiL.xaml", UriKind.Relative));
         }
 
         private void Bmapa_Click(object sender, RoutedEventArgs e)
@@ -34,7 +34,7 @@ namespace Projekt
 
         private void ustawieniaIng_Tap(object sender, System.Windows.Input.GestureEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/Ustawienia.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/UstawieniaL.xaml", UriKind.Relative));
         }
 
         private void PhoneApplicationPage_OrientationChanged(object sender, OrientationChangedEventArgs e)

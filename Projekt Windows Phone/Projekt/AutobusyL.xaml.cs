@@ -8,11 +8,12 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using System.IO;
 using System.Text.RegularExpressions;
+
 namespace Projekt
 {
-    public partial class Autobusy : PhoneApplicationPage
+    public partial class AutobusyL : PhoneApplicationPage
     {
-        public Autobusy()
+      public AutobusyL()
         {
             InitializeComponent();
         }
@@ -236,7 +237,7 @@ namespace Projekt
 
         private void PhoneApplicationPage_BackKeyPress(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/MainPageL.xaml", UriKind.Relative));
         }
 
         private void PhoneApplicationPage_OrientationChanged(object sender, OrientationChangedEventArgs e)

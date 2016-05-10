@@ -48,7 +48,7 @@ namespace Projekt
             // Switch the placement of the buttons based on an orientation change.
             if ((e.Orientation & PageOrientation.Portrait) == (PageOrientation.Portrait))
             {
-               
+                NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
             }
             // If not in portrait, move buttonList content to visible row and column.
             else

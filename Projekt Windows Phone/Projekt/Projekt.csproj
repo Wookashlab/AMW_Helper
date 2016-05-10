@@ -96,8 +96,14 @@
     <Compile Include="Autobusy.xaml.cs">
       <DependentUpon>Autobusy.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AutobusyL.xaml.cs">
+      <DependentUpon>AutobusyL.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Dzwonki.xaml.cs">
       <DependentUpon>Dzwonki.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DzwonkiL.xaml.cs">
+      <DependentUpon>DzwonkiL.xaml</DependentUpon>
     </Compile>
     <Compile Include="LocalizedStrings.cs" />
     <Compile Include="MainPage.xaml.cs">
@@ -118,6 +124,9 @@
     <Compile Include="Ustawienia.xaml.cs">
       <DependentUpon>Ustawienia.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UstawieniaL.xaml.cs">
+      <DependentUpon>UstawieniaL.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -128,7 +137,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="AutobusyL.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Dzwonki.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DzwonkiL.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -145,6 +162,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Ustawienia.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UstawieniaL.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

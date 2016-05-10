@@ -11,9 +11,9 @@ using Microsoft.Phone.Shell;
 
 namespace Projekt
 {
-    public partial class Dzwonki : PhoneApplicationPage
+    public partial class DzwonkiL : PhoneApplicationPage
     {
-        public Dzwonki()
+         public DzwonkiL()
         {
             InitializeComponent();
             sprawdz();
@@ -143,8 +143,8 @@ namespace Projekt
 
         private void PhoneApplicationPage_BackKeyPress(object sender, System.ComponentModel.CancelEventArgs e)
         {
-            NavigationService.Navigate(new Uri("/MainPage.xaml", UriKind.Relative));
+            NavigationService.Navigate(new Uri("/MainPageL.xaml", UriKind.Relative));
         }
 
     }
-}
+ }
