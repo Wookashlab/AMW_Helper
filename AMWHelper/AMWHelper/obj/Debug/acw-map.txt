@@ -1,0 +1,4 @@
+AMWHelper.MainActivity, AMWHelper;md5116694995e2c58d4383da7e380e3f56c.MainActivity
+AMWHelper.MainActivity, AMWHelper, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md5116694995e2c58d4383da7e380e3f56c.MainActivity
+AMWHelper.MainActivity;md5116694995e2c58d4383da7e380e3f56c.MainActivity
+amwhelper.MainActivity;md5116694995e2c58d4383da7e380e3f56c.MainActivity

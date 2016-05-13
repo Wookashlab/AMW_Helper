@@ -1,0 +1,15 @@
+C:\Users\MaciejH\Desktop\AMWHelper\AMWHelper\bin\Debug\AMWHelper.dll
+C:\Users\MaciejH\Desktop\AMWHelper\AMWHelper\bin\Debug\AMWHelper.pdb
+C:\Users\MaciejH\Desktop\AMWHelper\AMWHelper\bin\Debug\AMWHelper.AMWHelper.apk
+C:\Users\MaciejH\Desktop\AMWHelper\AMWHelper\bin\Debug\AMWHelper.AMWHelper-Signed.apk
+C:\Users\MaciejH\Desktop\AMWHelper\AMWHelper\obj\Debug\AMWHelper.dll
+C:\Users\MaciejH\Desktop\AMWHelper\AMWHelper\obj\Debug\AMWHelper.pdb
+C:\Users\MaciejH\Desktop\AMWHelper\AMWHelper\obj\Debug\android\bin\AMWHelper.AMWHelper.apk
+C:\Users\MaciejH\Desktop\AMWHelper\AMWHelper\obj\Debug\res\layout\main.xml
+C:\Users\MaciejH\Desktop\AMWHelper\AMWHelper\obj\Debug\res\values\strings.xml
+C:\Users\MaciejH\Desktop\AMWHelper\AMWHelper\obj\Debug\res\drawable\icon.png
+C:\Users\MaciejH\Desktop\AMWHelper\AMWHelper\obj\Debug\R.cs.flag
+C:\Users\MaciejH\Desktop\AMWHelper\AMWHelper\obj\Debug\uploadflags.txt
+C:\Users\MaciejH\Desktop\AMWHelper\AMWHelper\obj\Debug\AMWHelper.csprojResolveAssemblyReference.cache
+C:\Users\MaciejH\Desktop\AMWHelper\AMWHelper\obj\Debug\AMWHelper.dll.mdb
+C:\Users\MaciejH\Desktop\AMWHelper\AMWHelper\bin\Debug\AMWHelper.dll.mdb
