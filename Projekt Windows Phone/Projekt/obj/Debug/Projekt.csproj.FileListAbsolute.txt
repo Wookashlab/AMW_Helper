@@ -113,3 +113,6 @@ C:\Users\MaciejH\Desktop\ProjektOAM\Projekty-OAM\Projekt Windows Phone\Projekt\o
 D:\Programowanie\Projekty OAM\Projekt Windows Phone\Projekt\obj\Debug\UstawieniaL.g.cs
 D:\Programowanie\Projekty OAM\Projekt Windows Phone\Projekt\obj\Debug\DzwonkiL.g.cs
 D:\Programowanie\Projekty OAM\Projekt Windows Phone\Projekt\obj\Debug\AutobusyL.g.cs
+C:\Users\MaciejH\Desktop\ProjektOAM\Projekty-OAM\Projekt Windows Phone\Projekt\obj\Debug\AutobusyL.g.cs
+C:\Users\MaciejH\Desktop\ProjektOAM\Projekty-OAM\Projekt Windows Phone\Projekt\obj\Debug\DzwonkiL.g.cs
+C:\Users\MaciejH\Desktop\ProjektOAM\Projekty-OAM\Projekt Windows Phone\Projekt\obj\Debug\UstawieniaL.g.cs

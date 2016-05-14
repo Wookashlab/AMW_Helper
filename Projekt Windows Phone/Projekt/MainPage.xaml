@@ -45,7 +45,7 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <Image x:Name="logoImg" HorizontalAlignment="Left" Height="439" VerticalAlignment="Top" Width="456" Source="/Assets/logo2.png" Margin="0,10,0,0"/>
+            <Image x:Name="logoImg" HorizontalAlignment="Left" Height="434" VerticalAlignment="Top" Width="456" Source="/Assets/logo2.png" Margin="0,10,0,0"/>
             <Image x:Name="ustawieniaImg" HorizontalAlignment="Left" Height="100" Margin="356,586,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/Settings-L-icon.png" RenderTransformOrigin="0.843,0.631" Tap="ustawieniaImg_Tap"/>
             <Button x:Name="Bautobusy" Content="Autobusy" HorizontalAlignment="Left" Margin="10,372,0,0" VerticalAlignment="Top" Width="436" Click="Bautobusy_Click"/>
             <Button x:Name="Bdziwonki" Content="Dzwonki" HorizontalAlignment="Left" Margin="10,444,0,0" VerticalAlignment="Top" Width="436" Click="Bdziwonki_Click"/>
